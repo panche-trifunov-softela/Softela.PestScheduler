@@ -1,0 +1,6 @@
+@Softela.PestScheduler.API_HostAddress = http://localhost:5115
+
+GET {{Softela.PestScheduler.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

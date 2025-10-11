@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softela.PestScheduler.API", "Softela.PestScheduler.API\Softela.PestScheduler.API.csproj", "{9F4B756E-35F5-413E-A7D0-92C976F764B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softela.PestScheduler.Domain", "Softela.PestScheduler.Domain\Softela.PestScheduler.Domain.csproj", "{AE6E45EC-B4DA-404B-854A-A4BB96AD7451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softela.PestScheduler.Infrastructure", "Softela.PestScheduler.Infrastructure\Softela.PestScheduler.Infrastructure.csproj", "{06A0ABA9-40EA-4B17-B341-C33CBD59D5B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softela.PestScheduler.Application", "Softela.PestScheduler.Application\Softela.PestScheduler.Application.csproj", "{3385656D-0F6A-4D1E-BE0D-95C00AE89AFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F4B756E-35F5-413E-A7D0-92C976F764B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4B756E-35F5-413E-A7D0-92C976F764B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4B756E-35F5-413E-A7D0-92C976F764B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4B756E-35F5-413E-A7D0-92C976F764B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6E45EC-B4DA-404B-854A-A4BB96AD7451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6E45EC-B4DA-404B-854A-A4BB96AD7451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6E45EC-B4DA-404B-854A-A4BB96AD7451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6E45EC-B4DA-404B-854A-A4BB96AD7451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A0ABA9-40EA-4B17-B341-C33CBD59D5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A0ABA9-40EA-4B17-B341-C33CBD59D5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A0ABA9-40EA-4B17-B341-C33CBD59D5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A0ABA9-40EA-4B17-B341-C33CBD59D5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3385656D-0F6A-4D1E-BE0D-95C00AE89AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3385656D-0F6A-4D1E-BE0D-95C00AE89AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3385656D-0F6A-4D1E-BE0D-95C00AE89AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3385656D-0F6A-4D1E-BE0D-95C00AE89AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D122EFAB-CA67-448A-B507-96AD99FB61A2}
+	EndGlobalSection
+EndGlobal
