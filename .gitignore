@@ -4,3 +4,6 @@
 
 /Softela.PestScheduler/.vs/Softela.PestScheduler
 /.vs
+**/bin/
+**/obj/
+
