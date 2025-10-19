@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Softela.PestScheduler.Application\Softela.PestScheduler.Application.csproj" />
+    <ProjectReference Include="..\Softela.PestScheduler.Infrastructure\Softela.PestScheduler.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

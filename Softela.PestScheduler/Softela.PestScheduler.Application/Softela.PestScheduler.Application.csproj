@@ -6,4 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.10" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softela.PestScheduler.Domain\Softela.PestScheduler.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Customer\UpdateCustomer\" />
+    <Folder Include="Commands\Job\" />
+  </ItemGroup>
+
 </Project>
