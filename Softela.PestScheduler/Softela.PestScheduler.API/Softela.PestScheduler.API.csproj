@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Softela.PestScheduler.Infrastructure\Softela.PestScheduler.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
