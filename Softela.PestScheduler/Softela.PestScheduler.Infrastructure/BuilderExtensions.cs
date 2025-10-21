@@ -25,7 +25,7 @@ namespace Softela.PestScheduler.Infrastructure
                 .AddSqlServer(connectionString, "sqlserver");
 
             services.AddScoped<IJobRepository, JobRepository>();
-            services.AddScoped<ICustomerRepository, ICustomerRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
 
 
             var serviceProviderFactory = new DefaultServiceProviderFactory();
