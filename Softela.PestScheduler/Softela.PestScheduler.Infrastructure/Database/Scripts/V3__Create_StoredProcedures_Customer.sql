@@ -56,9 +56,6 @@ CREATE PROCEDURE dbo.usp_Customer_Insert
     @ProgramInstructions NVARCHAR(4000) = NULL,
     @ProgramPurchaseOrder NVARCHAR(50) = NULL,
     @ProgramPOExpirationDate DATETIME = NULL,
-    @AddressId INT = NULL,
-    @ContactId INT = NULL,
-    @SalespersonId INT = NULL,
     -- BaseEntity fields
     @CreatedBy UNIQUEIDENTIFIER = NULL,
     @CreatedAt DATETIME2 = NULL,
@@ -77,7 +74,6 @@ BEGIN
         SiteStreetNumber, SiteStreetName, SiteStreetSuffix, SiteSecondaryAddress, SiteCity, SiteState, SitePostalCode, SiteCountryId,
         EstimateId, EstimateName, EstimateBranchName,
         ProgramId, ProgramSaleDate, ProgramCancelDate, ProgramPendingCancelDate, ProgramInstructions, ProgramPurchaseOrder, ProgramPOExpirationDate,
-        AddressId, ContactId, SalespersonId,
         CreatedBy, CreatedAt, ModifiedBy, ModifiedAt
     )
     VALUES (
@@ -89,7 +85,6 @@ BEGIN
         @SiteStreetNumber, @SiteStreetName, @SiteStreetSuffix, @SiteSecondaryAddress, @SiteCity, @SiteState, @SitePostalCode, @SiteCountryId,
         @EstimateId, @EstimateName, @EstimateBranchName,
         @ProgramId, @ProgramSaleDate, @ProgramCancelDate, @ProgramPendingCancelDate, @ProgramInstructions, @ProgramPurchaseOrder, @ProgramPOExpirationDate,
-        @AddressId, @ContactId, @SalespersonId,
         ISNULL(@CreatedBy, NEWID()), ISNULL(@CreatedAt, SYSUTCDATETIME()), ISNULL(@ModifiedBy, ISNULL(@CreatedBy, NEWID())), ISNULL(@ModifiedAt, ISNULL(@CreatedAt, SYSUTCDATETIME()))
     );
 
@@ -156,9 +151,6 @@ CREATE PROCEDURE dbo.usp_Customer_Update
     @ProgramInstructions NVARCHAR(4000) = NULL,
     @ProgramPurchaseOrder NVARCHAR(50) = NULL,
     @ProgramPOExpirationDate DATETIME = NULL,
-    @AddressId INT = NULL,
-    @ContactId INT = NULL,
-    @SalespersonId INT = NULL,
     -- BaseEntity fields
     @ModifiedBy UNIQUEIDENTIFIER = NULL,
     @ModifiedAt DATETIME2 = NULL
@@ -222,9 +214,6 @@ BEGIN
         ProgramInstructions = @ProgramInstructions,
         ProgramPurchaseOrder = @ProgramPurchaseOrder,
         ProgramPOExpirationDate = @ProgramPOExpirationDate,
-        AddressId = @AddressId,
-        ContactId = @ContactId,
-        SalespersonId = @SalespersonId,
         ModifiedBy = ISNULL(@ModifiedBy, ModifiedBy),
         ModifiedAt = ISNULL(@ModifiedAt, SYSUTCDATETIME())
     WHERE Id = @Id;
@@ -290,9 +279,7 @@ CREATE PROCEDURE dbo.usp_Customer_Upsert
     @ProgramInstructions NVARCHAR(4000) = NULL,
     @ProgramPurchaseOrder NVARCHAR(50) = NULL,
     @ProgramPOExpirationDate DATETIME = NULL,
-    @AddressId INT = NULL,
-    @ContactId INT = NULL,
-    @SalespersonId INT = NULL,
+
     -- BaseEntity fields
     @CreatedBy UNIQUEIDENTIFIER = NULL,
     @CreatedAt DATETIME2 = NULL,
@@ -360,9 +347,6 @@ BEGIN
             @ProgramInstructions = @ProgramInstructions,
             @ProgramPurchaseOrder = @ProgramPurchaseOrder,
             @ProgramPOExpirationDate = @ProgramPOExpirationDate,
-            @AddressId = @AddressId,
-            @ContactId = @ContactId,
-            @SalespersonId = @SalespersonId,
             @ModifiedBy = @ModifiedBy,
             @ModifiedAt = @ModifiedAt;
         SELECT @Id AS Id;
@@ -424,9 +408,6 @@ BEGIN
             @ProgramInstructions = @ProgramInstructions,
             @ProgramPurchaseOrder = @ProgramPurchaseOrder,
             @ProgramPOExpirationDate = @ProgramPOExpirationDate,
-            @AddressId = @AddressId,
-            @ContactId = @ContactId,
-            @SalespersonId = @SalespersonId,
             @CreatedBy = @CreatedBy,
             @CreatedAt = @CreatedAt,
             @ModifiedBy = @ModifiedBy,
