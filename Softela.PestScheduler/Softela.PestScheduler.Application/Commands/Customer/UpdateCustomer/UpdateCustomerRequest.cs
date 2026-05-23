@@ -1,8 +1,8 @@
 ﻿using MediatR;
 
-namespace Softela.PestScheduler.Application.Commands.Customer.CreateCustomer
+namespace Softela.PestScheduler.Application.Commands.Customer.UpdateCustomer
 {
-    public sealed record CreateCustomerRequest : IRequest<bool>
+    public class UpdateCustomerRequest : IRequest<bool>
     {
         public int AccountId { get; set; }
         public string AccountNum { get; set; }

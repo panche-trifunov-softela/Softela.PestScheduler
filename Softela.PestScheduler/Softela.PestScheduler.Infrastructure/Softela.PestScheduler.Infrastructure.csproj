@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.20.1" />
     <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="Evolve" Version="3.2.0" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.2" />
@@ -26,6 +27,21 @@
   <ItemGroup>
     <ProjectReference Include="..\Softela.PestScheduler.Application\Softela.PestScheduler.Application.csproj" />
     <ProjectReference Include="..\Softela.PestScheduler.Domain\Softela.PestScheduler.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Database\Scripts\V1__Create_Customer.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Database\Scripts\V2__Create_Job.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Database\Scripts\V3__Create_StoredProcedures_Customer.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Database\Scripts\V4__Create_StoredProcedures_Job.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
